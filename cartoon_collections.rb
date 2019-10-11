@@ -12,11 +12,19 @@ new_call = planeteer_calls.collect {|x| x.upcase; x << "!"}
 
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+
+def long_planeteer_calls(words)
+  long_words = words.select {|x| x.length > 4}
+  if long_words == [] 
+    return false 
+  else
+    return true 
+  end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+
+def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  snacks.find {|food| food == cheese_types }
+  
 end
