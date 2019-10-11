@@ -11,8 +11,10 @@ end
 
 
 def summon_captain_planet(planeteer_calls)
-new_call = planeteer_calls.collect {|x| x.upcase; x << "!"}
-
+new_call = planeteer_calls.collect do |x|
+  x.upcase
+  x << "!"
+end
 
 end
 
