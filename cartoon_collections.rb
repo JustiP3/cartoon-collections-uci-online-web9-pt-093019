@@ -1,6 +1,9 @@
 def roll_call_dwarves(dwarves)
+  i = 0 
   dwarves.each do |name|
+    puts "#{i}. "
     puts name 
+    i += 1 
   end
   
 end
@@ -9,8 +12,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
 new_call = planeteer_calls.collect {|x| x.upcase; x << "!"}
-new_call.each {|x| puts x }
-new_call
+
 
 end
 
